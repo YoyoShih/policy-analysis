@@ -4,8 +4,8 @@ from actuarial.modules.KC1KC2 import pricing, reserve, valuation
 import time
 
 start = time.time()
-# m = pricing.Pricing(35, 1, 0.02)
-# print(m.DU)
+m = pricing.Pricing(35, 1, 0.02)
+print(m.DU)
 # print(m.premium)
 # print(m.alter)
 # print(m.result)

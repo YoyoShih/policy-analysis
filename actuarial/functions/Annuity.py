@@ -1,6 +1,7 @@
 from functools import reduce
 import math
 from numpy import logspace, concatenate
+from pandas import read_csv
 from actuarial.functions.basic_func import alpha, beta
 
 ''' Notation '''
@@ -8,7 +9,8 @@ from actuarial.functions.basic_func import alpha, beta
 
 ''' Constant '''
 AGE_END = 110
-mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+root_path = 'D:/Desktop/Actuarial Side Project/Policy Analysis/docs'
+mortTable = read_csv(f'{root_path}/2021TSO.csv')
 
 ''' Whole Life Annuity Functions '''
 def a_due_x(x, gender, omega=105, i=0.02):

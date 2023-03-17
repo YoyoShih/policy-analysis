@@ -1,13 +1,15 @@
 from functools import reduce
 import math
 from numpy import logspace, concatenate
+from pandas import read_csv
 
 ''' Notation '''
 # x: age    # omega: age end    # i: interest rate
 
 ''' Constant '''
 AGE_END = 110
-mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+root_path = 'D:/Desktop/Actuarial Side Project/Policy Analysis/docs'
+mortTable = read_csv(f'{root_path}/2021TSO.csv')
 
 # Whole Life Insurance Functions
 ''' Whole Life Insurance, continuous case '''

@@ -10,9 +10,9 @@ from actuarial.modules.KC1KC2.pricing import Pricing
 # purpose: 0 -> pricing, 1 -> reserve
 
 ''' File Settings '''
-root_path = 'C:/Users/shih/ActuaViz/docs/'
-mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-GPTable = read_csv(f'{root_path}Insur Info/GP.csv')
+root_path = 'D:/Desktop/Actuarial Side Project/Policy Analysis/docs'
+mortTable = read_csv(f'{root_path}/2021TSO.csv')
+GPTable = read_csv(f'{root_path}/GP.csv')
 
 @dataclass
 class Reserve:

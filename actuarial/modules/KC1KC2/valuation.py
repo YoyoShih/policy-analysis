@@ -9,9 +9,9 @@ from actuarial.modules.KC1KC2.reserve import Reserve
 # d_rate_m: discount rate for money # d_rate_p: discount rate for premium payment
 
 ''' File Settings '''
-root_path = 'C:/Users/shih/ActuaViz/docs/'
-mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-GPTable = read_csv(f'{root_path}Insur Info/GP.csv')
+root_path = 'D:/Desktop/Actuarial Side Project/Policy Analysis/docs'
+mortTable = read_csv(f'{root_path}/2021TSO.csv')
+GPTable = read_csv(f'{root_path}/GP.csv')
 
 assumptions = {
     'alpha per policy': 3471,

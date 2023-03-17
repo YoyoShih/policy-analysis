@@ -11,9 +11,9 @@ from actuarial.functions.Benefit import A_bar_x, nEx
 # purpose: 0 -> pricing, 1 -> reserve
 
 ''' File Settings '''
-root_path = 'D:/Desktop/Actuarial Side Project\Policy Analysis\docs'
-mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-GPTable = read_csv(f'{root_path}Insur Info/GP.csv')
+root_path = 'D:/Desktop/Actuarial Side Project/Policy Analysis/docs'
+mortTable = read_csv(f'{root_path}/2021TSO.csv')
+GPTable = read_csv(f'{root_path}/GP.csv')
 
 @dataclass
 class Pricing:
