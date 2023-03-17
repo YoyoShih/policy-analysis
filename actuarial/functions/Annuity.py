@@ -2,14 +2,13 @@ from functools import reduce
 import math
 from numpy import logspace, concatenate
 from actuarial.functions.basic_func import alpha, beta
-from database import DBconn
 
 ''' Notation '''
 # x: age    # omega: age end    # i: interest rate
 
 ''' Constant '''
 AGE_END = 110
-mortTable = DBconn.getLifeTable()
+mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ''' Whole Life Annuity Functions '''
 def a_due_x(x, gender, omega=105, i=0.02):

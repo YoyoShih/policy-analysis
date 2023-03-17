@@ -1,7 +1,6 @@
 from dataclasses import dataclass, field
 from numpy import array, logspace, irr
 from pandas import read_csv, DataFrame, concat
-from database.DBconn import getLifeTable
 from actuarial.modules.KC1KC2.reserve import Reserve
 
 ''' Notation '''
@@ -11,7 +10,7 @@ from actuarial.modules.KC1KC2.reserve import Reserve
 
 ''' File Settings '''
 root_path = 'C:/Users/shih/ActuaViz/docs/'
-mortTable = getLifeTable()
+mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 GPTable = read_csv(f'{root_path}Insur Info/GP.csv')
 
 assumptions = {

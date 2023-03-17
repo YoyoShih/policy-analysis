@@ -1,14 +1,13 @@
 from functools import reduce
 import math
 from numpy import logspace, concatenate
-from database import DBconn
 
 ''' Notation '''
 # x: age    # omega: age end    # i: interest rate
 
 ''' Constant '''
 AGE_END = 110
-mortTable = DBconn.getLifeTable()
+mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # Whole Life Insurance Functions
 ''' Whole Life Insurance, continuous case '''

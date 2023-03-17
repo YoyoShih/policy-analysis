@@ -3,7 +3,6 @@ from pandas import read_csv, DataFrame, concat
 from numpy import arange, array, logspace, full, concatenate, cumsum, ndarray, where, zeros
 from actuarial.functions.Annuity import a_due_x_n
 from actuarial.functions.Benefit import A_bar_x, nEx
-from database.DBconn import getLifeTable
 
 ''' Notation '''
 # x: age    # omega: age end    # i: interest rate  # S: sum assured    PPP: Premiums Payment Period   
@@ -12,8 +11,8 @@ from database.DBconn import getLifeTable
 # purpose: 0 -> pricing, 1 -> reserve
 
 ''' File Settings '''
-root_path = 'C:/Users/shih/ActuaViz/docs/'
-mortTable = getLifeTable()
+root_path = 'D:/Desktop/Actuarial Side Project\Policy Analysis\docs'
+mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 GPTable = read_csv(f'{root_path}Insur Info/GP.csv')
 
 @dataclass

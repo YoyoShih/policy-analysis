@@ -2,7 +2,6 @@ from dataclasses import dataclass, field
 from pandas import read_csv, DataFrame, concat
 from numpy import logspace, concatenate
 from actuarial.modules.KC1KC2.pricing import Pricing
-from database import DBconn
 
 ''' Notation '''
 # x: age    # omega: age end    # i: interest rate  # S: sum assured    PPP: Premiums Payment Period   
@@ -12,7 +11,7 @@ from database import DBconn
 
 ''' File Settings '''
 root_path = 'C:/Users/shih/ActuaViz/docs/'
-mortTable = DBconn.getLifeTable()
+mortTable = None    # mortTable!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 GPTable = read_csv(f'{root_path}Insur Info/GP.csv')
 
 @dataclass
