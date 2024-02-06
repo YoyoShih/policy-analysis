@@ -1,5 +1,5 @@
 # ActuaViz
-I had been an intern of ActuaViz from 4/7/22 to 31/8/22, titled as "Actuarial Python Engineer".
+I had been an intern of ActuaViz from 4/7/22 to 31/1/23, titled as "Actuarial Python Engineer".
 This documentation is to explain these codes, and also record my thought for future development purpose.
 
 ## Background Knowledge Requirement
