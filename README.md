@@ -16,7 +16,6 @@ There are several teaching articles on my Medium as well as ActuaViz's.
 
 ## Contact Info
 Feel free to read articles and contact me anytime if you have any questions.
-Medium: https://medium.com/@yoyoshih
 Email: fdtrretvx342242@gmail.com
 
 ## Files Structure
